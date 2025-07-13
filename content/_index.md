@@ -1,5 +1,7 @@
 ---
-title: 分布式存储漫游指南
+title: 分布式存储漫游指南 - 首页
+cascade:
+  type: docs
 ---
 
 本漫游指南从现代数据中心硬件、单机 IO 性能出发，逐步探索分布式的存储产品的现状和技术点。
@@ -9,7 +11,7 @@ title: 分布式存储漫游指南
 笔者在学习过程中，受益于诸多开发者的博客文章和技术讨论，故自己也记录下来，希望能和读者多多交流学习。
 
 {{< callout type="info" >}}
-📖 本书源代码托管在 [GitHub](https://github.com/sptuan/dist-storage-memo)，欢迎 star 和催更！
+📖 本书源代码托管在 [GitHub Repo](https://github.com/sptuan/dist-storage-memo)，欢迎 star 和催更！
 
 ✍️ 文中的谬误、遗漏信息，欢迎 issue 补充讨论！
 {{< /callout >}}

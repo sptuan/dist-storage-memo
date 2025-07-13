@@ -1,4 +1,4 @@
-baseURL = 'https://example.org'
+baseURL = 'https://dist-storage-memo.steinslab.io'
 languageCode = 'zh-cn'
 title = '分布式存储漫游指南'
 theme = 'hextra'
@@ -27,13 +27,13 @@ theme = 'hextra'
 
 [menu]
   [[menu.main]]
-    name = "分布式存储漫游指南"
-    pageRef = "/docs"
-    weight = 10
-  [[menu.main]]
     name = "关于"
     pageRef = "/about"
     weight = 20
+  [[menu.main]]
+    name = "作者 Blog"
+    url = "https://steinslab.io/"
+    weight = 25
   [[menu.main]]
     name = "GitHub"
     url = "https://github.com/sptuan/dist-storage-mono"
