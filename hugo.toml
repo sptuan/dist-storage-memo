@@ -68,7 +68,7 @@ theme = 'hextra'
     enable = false
 
   [params.theme]
-    default = "light"
+    default = "system"
 
   # Social links
   [[params.navbar.socialLinks]]
