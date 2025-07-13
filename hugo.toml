@@ -43,6 +43,10 @@ theme = 'hextra'
 
 [params]
 
+  # Mermaid diagrams
+  [params.mermaid]
+    enable = true
+
   [params.navbar]
     displayTitle = true
     displayLogo = false

@@ -19,9 +19,9 @@ cascade:
 ## 章节目录
 
 {{< cards >}}
-  {{< card link="chapter-01" title="第一章：硬件" subtitle="2025年了，存储硬件啥样了？" >}}
-  {{< card link="chapter-02" title="第二章：Sync I/O" subtitle="我应怎样在单机上读写数据？(同步篇)" >}}
-  {{< card link="chapter-03" title="第三章：Async I/O" subtitle="我应怎样在单机上读写数据？(异步篇)" >}}
+  {{< card link="hardware" title="第一章：硬件" subtitle="2025年了，存储硬件啥样了？" >}}
+  {{< card link="sync-io" title="第二章：Sync I/O" subtitle="我应怎样在单机上读写数据？(同步篇)" >}}
+  {{< card link="async-io" title="第三章：Async I/O" subtitle="我应怎样在单机上读写数据？(异步篇)" >}}
 {{< /cards >}}
 
 ## 即将推出
