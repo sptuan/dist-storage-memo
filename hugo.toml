@@ -1,4 +1,4 @@
-baseURL = 'https://dist-storage-memo.steinslab.io'
+baseURL = 'https://storage-memo.steinslab.io'
 languageCode = 'zh-cn'
 title = '分布式存储漫游指南'
 theme = 'hextra'
