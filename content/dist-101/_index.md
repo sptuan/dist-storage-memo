@@ -1,6 +1,8 @@
 ---
 title: "第四章：分布式系统 101"
 weight: 4
+cascade:
+  type: docs
 ---
 
 让我们正式进入分布式的世界。本章更加偏向于分布式存储开发者关心的话题。相对地，其他系统（如分布式计算、分布式流处理）关心的主题可能略有不同，但总体思想是一致的。
@@ -19,9 +21,27 @@ weight: 4
 
 ### 设计分布式系统，是在设计什么？
 分布式存储系统永远是围绕着两个主题展开的：分区(Parititon) 和复制(Replicate)。
-而分布式系统的技术方案，就是要回答这两个问题。
 
-### 存储数据量级概念
+- 撰写分布式系统的技术方案，就是要回答这两个问题。
+- 评审分布式系统的技术方案，就是要帮忙思考和推演这两个问题。
+
+### 我是新来的，想总览全局？
+
+笔者推荐先通篇阅读材料[^dist_book]，这本书籍诙谐有趣。
+
+然后阅读数个经典工程论文，以及近年的系统设计论文，对照上书尝试思考开发者问什么要如此设计。比如
+
+- GFS: The Google File System [^GFS]
+- Tectonic: Facebook's Tectonic Filesystem: Efficiency from Exascale [^tectonic]
+
+[^GFS]: [The Google File System](https://research.google.com/archive/gfs-sosp2003.pdf)
+[^tectonic]: [Facebook's Tectonic Filesystem: Efficiency from Exascale](https://www.usenix.org/system/files/fast21-pan.pdf)
+
+实际工程经验总结的博文也非常宝贵。比如[^dist-notes]。
+
+
+
+### 1 EiB 是什么概念？
 开发者可能对系统的延迟量级 (下表) 比较熟悉。表格通过对比，展示了 cpu 时间和网络时间的巨大差异。
 
 | **操作**               | **实际延迟** | **相对 CPU 周期 (1周期=0.3ns)** | **CPU 视角的比喻**                     |
@@ -83,6 +103,10 @@ weight: 4
 
 ### 推荐阅读
 
-笔者刚刚接触分布式系统的阅读材料。
+笔者阅读后认为帮助很大的阅读材料。
 
-- 娓娓道来的分布式系统教程 [Distributed systems for fun and profit](https://book.mixu.net/distsys/index.html)
+- Distributed systems for fun and profit [^dist_book]
+- Notes on Distributed Systems for Young Bloods [^dist-notes]
+
+[^dist_book]: [Distributed systems for fun and profit](https://book.mixu.net/distsys/index.html)
+[^dist-notes]: [Notes on Distributed Systems for Young Bloods](https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/)

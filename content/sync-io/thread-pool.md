@@ -1,5 +1,5 @@
 ---
-title: "线程池模式 (Thread Pool)"
+title: "2.4 线程池模式 (Thread Pool)"
 weight: 4
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "同步 I/O (Sync I/O)"
+title: "2.1 同步 I/O (Sync I/O)"
 weight: 1
 ---
 

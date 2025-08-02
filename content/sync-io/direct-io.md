@@ -1,5 +1,5 @@
 ---
-title: "直接 I/O (Direct I/O)"
+title: "2.2 直接 I/O (Direct I/O)"
 weight: 2
 ---
 

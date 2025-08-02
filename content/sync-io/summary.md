@@ -1,5 +1,5 @@
 ---
-title: "小结"
+title: "2.5 小结"
 weight: 5
 ---
 
