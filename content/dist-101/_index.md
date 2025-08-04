@@ -19,6 +19,8 @@ cascade:
 - 是否现有算法实现分布式共识？
 - ......
 
+![](https://static.zdfmc.net/imgs/2025/08/ad4ffb1e01341251.png)
+
 ### 设计分布式系统，是在设计什么？
 分布式存储系统永远是围绕着两个主题展开的：分区(Parititon) 和复制(Replicate)。
 
