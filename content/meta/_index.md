@@ -1,6 +1,6 @@
 ---
-title: "4.2 时间!! 顺序!!"
-weight: 2
+title: "第五章：元数据服务"
+weight: 5
 cascade:
   type: docs
 ---
@@ -8,5 +8,3 @@ cascade:
 {{< callout type="info" >}}
 ✋🏻😭✋🏻 本小节编辑中 ✍️✍️✍️
 {{< /callout >}}
-
-设计个分布式系统，相对论都用上了？
