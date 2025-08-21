@@ -1,0 +1,26 @@
+/* 自定义样式 - 增加侧边栏宽度 */
+
+/* 增加侧边栏宽度从默认的 16rem (256px) 到 20rem (320px) */
+@media (min-width: 48rem) {
+    .sidebar-container {
+        width: 18rem !important;
+    }
+}
+
+/* 可选：进一步增加到更宽的尺寸 */
+/* 
+@media (min-width: 48rem) {
+  .sidebar-container {
+    width: 24rem !important;  // 384px
+  }
+}
+*/
+
+/* 可选：如果您希望在更大的屏幕上使用更宽的侧边栏 */
+/* 
+@media (min-width: 64rem) {
+  .sidebar-container {
+    width: 22rem !important;  // 352px
+  }
+}
+*/
