@@ -1,0 +1,5 @@
+# 自定义中文翻译文件
+# 覆盖默认的 Hextra 主题翻译
+
+copyright: "© 2025 steinslab.io"
+poweredBy: "由 Hextra + Hugo 驱动"
