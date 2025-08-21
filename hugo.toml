@@ -56,14 +56,20 @@ theme = 'hextra'
   [params.navbar]
     displayTitle = true
     displayLogo = false
+    # 导航栏宽度与页面保持一致
+    width = "wide"
 
   [params.page]
     # (Optional, default true) Display navigation breadcrumb
     breadcrumb = true
+    # 页面宽度设置：full (100%), wide (90rem), normal (1280px)
+    width = "wide"
 
   [params.footer]
     displayCopyright = true
     displayPoweredBy = true
+    # 页脚宽度与页面保持一致
+    width = "wide"
 
   displayUpdatedDate = true
   dateFormat = "January 2, 2006"

@@ -1,0 +1,20 @@
+# GitHub 语言检测配置文件
+# 忽略主题文件夹的语言统计，因为这些不是项目的核心代码
+
+# 忽略整个 themes 目录的语言统计
+themes/** linguist-vendored
+
+# 忽略 public 目录（生成的静态文件）
+public/** linguist-generated
+
+# 标识主要的内容文件类型
+*.md linguist-documentation
+content/** linguist-documentation
+
+# 确保配置文件被正确识别
+*.toml linguist-language=TOML
+*.yaml linguist-language=YAML
+*.yml linguist-language=YAML
+
+# 如果有自定义的 CSS，确保它被识别为项目代码
+assets/css/custom.css linguist-vendored=false

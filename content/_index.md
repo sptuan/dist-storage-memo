@@ -1,20 +1,52 @@
 ---
-title: 分布式存储漫游指南 - 首页
+title: ""
 cascade:
   type: docs
+toc: false
+sidebar:
+  open: true
+prev: false
+next: false
+breadcrumbs: false
 ---
 
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="static/favicon-dark.svg">
+  <img src="favicon.svg" alt="分布式存储漫游指南" width="120" height="120">
+</picture>
+
+<h1 class="center-title">分布式存储漫游指南</h1>
+
+<p align="center">
+  <a href="https://github.com/sptuan/dist-storage-memo">
+    <img src="https://img.shields.io/github/stars/sptuan/dist-storage-memo?style=for-the-badge&logo=github&color=yellow" alt="GitHub Stars">
+  </a>
+    <a href="https://github.com/sptuan">
+    <img src="https://img.shields.io/badge/GitHub-sptuan-blue?style=flat-square&logo=github" alt="GitHub">
+  </a>
+  <a href="https://steinslab.io">
+    <img src="https://img.shields.io/badge/Blog-steinslab.io-green?style=flat-square&logo=blogger" alt="Blog">
+  </a>
+  <a href="mailto:sptuan@steinslab.io">
+    <img src="https://img.shields.io/badge/Email-sptuan@steinslab.io-red?style=flat-square&logo=gmail" alt="Email">
+  </a>
+</p>
+
+</div>
 本漫游指南从现代数据中心硬件、单机 IO 性能出发，逐步探索分布式的存储产品的现状和技术点。
 
 本电子书是笔者从事分布式存储研发经历的小结。带着曾有的疑惑，从新手村重新出发，带有主观色彩。
 
 笔者在学习过程中，受益于诸多开发者的博客文章和技术讨论，故自己也记录下来，希望能和读者多多交流学习。
 
-{{< callout type="info" >}}
-📖 本书源代码托管在 [GitHub Repo](https://github.com/sptuan/dist-storage-memo)，欢迎 star 和催更！
+## 适合读者
 
-✍️ 文中的谬误、遗漏信息，欢迎 issue 补充讨论！
-{{< /callout >}}
+- **分布式系统开发者** - 存储系统架构设计与实现
+- **存储系统工程师** - 深入理解存储技术栈
+- **学生和研究者** - 对存储技术感兴趣的学习者
+- **技术人员** - 希望了解分布式存储架构
 
 ## 章节目录
 
@@ -27,7 +59,7 @@ cascade:
 
 ## 即将推出
 
-更多章节正在撰写中，敬请期待：
+更多章节正在撰写中：
 
 {{< cards >}}
   {{< card title="第五章：控制节点篇" subtitle="数据节点的管理、路由与迁移修复" >}}
@@ -36,3 +68,26 @@ cascade:
   {{< card title="第八章：容灾篇" subtitle="容灾与跨区异步复制" >}}
   {{< card title="番外篇：CDN" subtitle="其实我也是存储节点" >}}
 {{< /cards >}}
+
+## 贡献与反馈
+
+{{< callout type="info" >}}
+📖 本书源代码托管在 [GitHub Repo](https://github.com/sptuan/dist-storage-memo)，欢迎 star 和催更！
+
+✍️ 文中的谬误、遗漏信息，欢迎 issue 补充讨论！
+{{< /callout >}}
+
+### 如何贡献
+
+- **发现错误** - [提交 Issue](https://github.com/sptuan/dist-storage-memo/issues)
+- **内容建议** - [功能请求](https://github.com/sptuan/dist-storage-memo/issues)  
+- **内容贡献** - [Pull Request](https://github.com/sptuan/dist-storage-memo/pulls)
+- **点赞支持** - [⭐ Star 项目](https://github.com/sptuan/dist-storage-memo)
+
+## 关于作者
+
+**SPtuan** - 一名普通的工程师，最大的愿望是度过平静的时光。
+
+- [GitHub](https://github.com/sptuan)
+- [Blog](https://steinslab.io)
+- Email: sptuan#steinslab.io (# 替换为 @)

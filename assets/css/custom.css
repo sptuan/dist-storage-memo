@@ -1,10 +1,72 @@
-/* 自定义样式 - 增加侧边栏宽度 */
+/* 自定义样式 - 增加侧边栏宽度并修复文本排版 */
 
-/* 增加侧边栏宽度从默认的 16rem (256px) 到 20rem (320px) */
+/* 增加侧边栏宽度从默认的 16rem (256px) 到 18rem (288px) */
 @media (min-width: 48rem) {
     .sidebar-container {
         width: 18rem !important;
     }
+}
+
+/* 修复正文排版问题 - 优化文本对齐和断行 */
+.content {
+    text-align: justify;
+    /* 两端对齐，让右侧更整齐 */
+    text-justify: inter-ideograph;
+    /* 中文字符间对齐 */
+    hyphens: auto;
+    /* 自动断词 */
+    word-wrap: break-word;
+    /* 长单词换行 */
+    line-height: 1.65;
+    /* 增加行高改善可读性 */
+}
+
+/* 段落特别优化 */
+.content p {
+    text-align: justify;
+    /* 两端对齐 */
+    word-break: normal;
+    /* 正常换行规则 */
+    overflow-wrap: break-word;
+    /* 长单词换行 */
+    margin-bottom: 1em;
+    /* 段落间距 */
+}
+
+/* 代码块和预格式化文本保持左对齐 */
+.content pre,
+.content code,
+.content .highlight {
+    text-align: left !important;
+}
+
+/* 标题保持左对齐 */
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+    text-align: left !important;
+}
+
+/* 特殊的居中标题类 */
+.content .center-title {
+    text-align: center !important;
+}
+
+/* 列表项保持左对齐 */
+.content ul,
+.content ol,
+.content li {
+    text-align: left !important;
+}
+
+/* 表格内容左对齐 */
+.content table,
+.content td,
+.content th {
+    text-align: left !important;
 }
 
 /* 可选：进一步增加到更宽的尺寸 */
