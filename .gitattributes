@@ -1,4 +1,6 @@
 # GitHub 语言检测配置文件
+* linguist-language=Markdown
+
 # 忽略主题文件夹的语言统计，因为这些不是项目的核心代码
 
 # 忽略整个 themes 目录的语言统计
@@ -16,5 +18,5 @@ content/** linguist-documentation
 *.yaml linguist-language=YAML
 *.yml linguist-language=YAML
 
-# 如果有自定义的 CSS，确保它被识别为项目代码
+# 如果有自定义的 CSS，确保它被不识别为项目代码
 assets/css/custom.css linguist-vendored=false
