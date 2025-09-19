@@ -3,6 +3,11 @@ languageCode = 'zh-cn'
 title = '分布式存储漫游指南'
 theme = 'hextra'
 
+# Google Analytics 配置（主题已内置 _partials/google-analytics.html，会在生产环境注入 gtag.js）
+[services]
+  [services.googleAnalytics]
+    ID = 'G-1CPZP87MFH'
+
 # Redirect root to docs
 [outputs]
   home = ["HTML", "RSS"]
