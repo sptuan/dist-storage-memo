@@ -14,11 +14,11 @@ breadcrumbs: false
 
 <h1 class="center-title">分布式存储漫游指南</h1>
 
-<p align="center">
-  <em>分布式存储技术探索之旅 by SPtuan</em>
-</p>
-
 <div align="center">
+
+<p align="center">
+  <h5 class="center-title"><em>分布式存储技术探索之旅 by SPtuan</em></h5>
+</p>
 
 <picture>
   <img src="https://static.zdfmc.net/imgs/2025/10/591fc7cf520b7a51.jpg" alt="分布式存储漫游指南" width="330">
