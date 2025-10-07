@@ -21,7 +21,7 @@ breadcrumbs: false
 <div align="center">
 
 <picture>
-  <img src="https://static.zdfmc.net/imgs/2025/10/a4cf4fdc8936dca9.jpg" alt="分布式存储漫游指南" width="330">
+  <img src="https://static.zdfmc.net/imgs/2025/10/591fc7cf520b7a51.jpg" alt="分布式存储漫游指南" width="330">
 </picture>
 
 </div>
