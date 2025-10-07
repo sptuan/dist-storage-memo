@@ -1,6 +1,6 @@
 ---
-title: "第五章：元数据服务"
-weight: 5
+title: "第六章：元数据系统设计"
+weight: 6
 cascade:
   type: docs
 ---
