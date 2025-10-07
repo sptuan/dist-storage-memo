@@ -164,9 +164,20 @@ hugo
 
 #### 👋 分布式存储交流闲聊群
 
+<table>
+<tr>
+<td>
+<picture>
+  <img src="https://static.zdfmc.net/imgs/2025/10/695b77161ca33ddf.png" alt="WeChat" width="300">
+</picture>
+</td>
+<td>
 <picture>
   <img src="https://static.zdfmc.net/imgs/2025/10/0d8fc3f543265714.png" alt="WeChat" width="300">
 </picture>
+</td>
+</tr>
+</table>
 
 世界很大，圈子很小！
 让世界更热闹一些吧 (球球了)！
