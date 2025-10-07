@@ -12,12 +12,19 @@ breadcrumbs: false
 
 <div align="center">
 
+<h1 class="center-title">分布式存储漫游指南</h1>
+
+<p align="center">
+  <em>分布式存储技术探索之旅 by SPtuan</em>
+</p>
+
+<div align="center">
+
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="static/favicon-dark.svg">
-  <img src="favicon.svg" alt="分布式存储漫游指南" width="120" height="120">
+  <img src="https://static.zdfmc.net/imgs/2025/10/a4cf4fdc8936dca9.jpg" alt="分布式存储漫游指南" width="330">
 </picture>
 
-<h1 class="center-title">分布式存储漫游指南</h1>
+</div>
 
 <p align="center">
   <a href="https://github.com/sptuan/dist-storage-memo">
@@ -91,3 +98,15 @@ breadcrumbs: false
 - [GitHub](https://github.com/sptuan)
 - [Blog](https://steinslab.io)
 - Email: sptuan#steinslab.io (# 替换为 @)
+
+## 读者交流闲聊群
+
+<picture>
+  <img src="https://static.zdfmc.net/imgs/2025/10/0d8fc3f543265714.png" alt="WeChat" width="300">
+</picture>
+
+世界很大，圈子很小！
+让世界更热闹一些吧 (球球了)！
+所有的读者都大大大欢迎！
+您的反馈是我前进的动力！
+WeChat: dangotech

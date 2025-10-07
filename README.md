@@ -1,16 +1,19 @@
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="static/favicon-dark.svg">
-  <img src="static/favicon.svg" alt="分布式存储漫游指南" width="120" height="120">
-</picture>
-
 # 分布式存储漫游指南
 
 <p align="center">
-  <em>分布式存储技术探索之旅</em>
+  <em>分布式存储技术探索之旅 by SPtuan</em>
 </p>
+
+<div align="center">
+
+<picture>
+  <img src="static/banner.jpg" alt="分布式存储漫游指南" width="330" >
+</picture>
+
+</div>
 
 <p align="center">
   <a href="https://storage-memo.steinslab.io/">
@@ -39,9 +42,10 @@
 <tr>
 <td width="50%">
 
-**系统开发者**
+**开发者**
 - 分布式系统开发者
 - 存储系统工程师
+- 存储应用开发者
 
 </td>
 <td width="50%">
@@ -49,7 +53,7 @@
 **学习者**
 - 对存储技术感兴趣的学生和研究者
 - 希望了解分布式存储架构的技术人员
-- 想了解分布式存储开发日常工作内容的人员
+- 正在准备面试材料的求职者
 
 </td>
 </tr>
@@ -101,10 +105,14 @@ hugo
 │   ├── 时间与时钟
 │   ├── 分区与副本
 │   └── 混沌工程
-└── 🗃️ 元数据管理
+├── 🛠️ 存储引擎系统设计
+│   ├── 复制模型和优缺点
+│   ├── 分区模型和优缺点
+│   └── 数据安全性模型
+└── 🗃️ 元数据系统设计
     └── NoSQL 数据库
 
-持续更新中
+绝赞更新中……
 ```
 
 ## 🤝 贡献指南
@@ -154,6 +162,18 @@ hugo
   <strong>GitHub:</strong> <a href="https://github.com/sptuan/dist-storage-memo/issues">Issues & Discussions</a>
 </p>
 
+#### 👋 分布式存储交流闲聊群
+
+<picture>
+  <img src="https://static.zdfmc.net/imgs/2025/10/0d8fc3f543265714.png" alt="WeChat" width="300">
+</picture>
+
+世界很大，圈子很小！
+让世界更热闹一些吧 (球球了)！
+所有的读者都大大大欢迎！
+您的反馈是我前进的动力！
+WeChat: dangotech
+
 ### ⭐ 如果这个项目对您有帮助，请考虑给个 Star！
 
 <a href="https://github.com/sptuan/dist-storage-memo">
@@ -161,3 +181,5 @@ hugo
 </a>
 
 </div>
+
+
