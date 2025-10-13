@@ -102,7 +102,7 @@ breadcrumbs: false
 ## 读者交流闲聊群
 
 <picture>
-  <img src="https://static.zdfmc.net/imgs/2025/10/2921d6365354a480.png" alt="WeChat" width="300">
+  <img src="https://static.zdfmc.net/imgs/2025/10/5cef5298a2bdcf34.png" alt="WeChat" width="300">
 </picture>
 <picture>
   <img src="https://static.zdfmc.net/imgs/2025/10/0d8fc3f543265714.png" alt="WeChat" width="300">
