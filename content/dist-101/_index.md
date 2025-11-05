@@ -112,3 +112,5 @@ cascade:
 
 [^dist_book]: [Distributed systems for fun and profit](https://book.mixu.net/distsys/index.html)
 [^dist-notes]: [Notes on Distributed Systems for Young Bloods](https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/)
+
+{{< section-cards >}}

@@ -19,3 +19,5 @@ weight: 3
 鉴于本文为写于 2025 年的存储小品文，kernel 早已经推进至 `6.15`, 故将重点放于 `libaio` 和 `io_uring`。
 
 
+
+{{< section-cards >}}

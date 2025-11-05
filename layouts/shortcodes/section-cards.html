@@ -1,0 +1,20 @@
+{{- /*
+Shortcode: section-cards
+Renders cards for the current section's regular pages (non-index).
+Usage: {{< section-cards >}}
+*/ -}}
+{{ $pages := .Page.RegularPages }}
+{{ if gt (len $pages) 0 }}
+<div class="section-overview">
+  <h2>本章小节一览</h2>
+  <div class="section-cards">
+    {{ range $pages }}
+    <article class="section-card">
+      <a class="card-link" href="{{ .RelPermalink }}" title="{{ .Title }}">
+        <h3 class="card-title">{{ .Title }}</h3>
+      </a>
+    </article>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

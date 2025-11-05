@@ -34,9 +34,9 @@ Linux IO 可根据以下性质分类[^self]
 
 
 
+{{< section-cards >}}
 
 
-## 参考资料
 [^1]: [Ensuring data reaches disk - LWN.net](https://lwn.net/Articles/457667/)
 [^2]: [从共识算法开谈 - 硬盘性能的最大几个误解](https://zhuanlan.zhihu.com/p/55658164)
 [^3]: [浅谈存储引擎数据结构](https://haobin.work/2024/05/24/%E7%AE%97%E6%B3%95/%E6%B5%85%E8%B0%88%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/)

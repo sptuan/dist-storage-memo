@@ -86,3 +86,91 @@
   }
 }
 */
+
+/* Section cards for listing subsection pages */
+.section-overview {
+    margin: 3rem 0 2rem;
+    padding: 1.5rem;
+    background: var(--tw-prose-pre-bg, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--tw-prose-hr, #eaecef);
+}
+
+.dark .section-overview {
+    background: var(--tw-prose-pre-bg);
+    border-color: var(--tw-prose-hr);
+}
+
+.section-overview h2 {
+    margin-top: 0 !important;
+    margin-bottom: 1.5rem !important;
+    font-size: 1.5rem !important;
+    color: var(--tw-prose-headings);
+}
+
+.section-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.section-card {
+    background: var(--tw-prose-pre-bg);
+    border: 1px solid rgba(125, 125, 125, 0.2);
+    border-radius: 8px;
+    transition: all .2s ease;
+    position: relative;
+}
+
+.section-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    border: 1px solid rgba(125, 125, 125, 0.1);
+    pointer-events: none;
+}
+
+.section-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--tw-prose-links);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.dark .section-card {
+    border-color: rgba(200, 200, 200, 0.15);
+}
+
+.dark .section-card::after {
+    border-color: rgba(200, 200, 200, 0.08);
+}
+
+.dark .section-card:hover {
+    border-color: var(--tw-prose-links);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.card-link {
+    display: block;
+    padding: 1rem;
+    color: var(--tw-prose-headings);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 7px;
+    transition: background-color .2s ease;
+}
+
+.card-link:hover {
+    background-color: rgba(125, 125, 125, 0.05);
+}
+
+.dark .card-link:hover {
+    background-color: rgba(200, 200, 200, 0.05);
+}
+
+.card-title {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
