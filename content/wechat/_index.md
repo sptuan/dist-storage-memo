@@ -7,7 +7,7 @@ cascade:
 
 
 <picture>
-  <img src="https://static.zdfmc.net/imgs/2025/10/7918949d567afeb1.png" alt="WeChat" width="300">
+  <img src="https://static.zdfmc.net/imgs/2025/11/110b88837543d1e8.png" alt="WeChat" width="300">
 </picture>
 <picture>
   <img src="https://static.zdfmc.net/imgs/2025/10/0d8fc3f543265714.png" alt="WeChat" width="300">
