@@ -168,7 +168,7 @@ hugo
 <tr>
 <td>
 <picture>
-  <img src="https://static.zdfmc.net/imgs/2025/11/110b88837543d1e8.png" alt="WeChat" width="250">
+  <img src="https://static.zdfmc.net/imgs/2025/12/d896440ca72d58d15fcce4df5a4c9b46.png" alt="WeChat" width="250">
 </picture>
 </td>
 <td>
