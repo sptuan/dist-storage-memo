@@ -14,17 +14,19 @@ weight: 5
 
 因此本节将重点讨论：
 
-1. 分布式存储系统的产品形态（对象存储、块存储、文件存储等）
-2. 分布式存储系统实现中的常见组件(存储引擎、元数据以及管理节点等)
+1. 分布式存储系统的**产品形态**（对象存储、块存储、文件存储等）
+2. 分布式存储系统实现中的**常见组件**(存储引擎、元数据以及管理节点等)
 
-
-其他技术背景(比如分布式数据库)的读者，也可将本节作为综述，了解分布式存储工程师的视角。
+本节目的：
+1. **For 分布式存储开发者**：为后续的分布式存储系统设计讨论，提供必要前提
+2. **For 分布式存储用户**：了解为什么某类存储产品有自己的优势和短板
+3. **For 其他技术背景**(比如分布式数据库)**读者**: 可将本节作为综述，了解分布式存储工程师的思维视角
 
 ## 分布式存储系统形态
 
 随着大规模的使用和云服务的发展，自然形成了不同的产品形态，可分为对象存储、块存储、文件系统存储。
 
-### 对象存储
+### 对象存储 (Object Stroage)
 
 提到对象存储，我们一般认为 S3 已经成为了一种事实标准，任何一个提供对象存储语义的服务都不太可能绕过该用户接口。S3 的全称 **S**imple **S**torage **S**ervice，这个 Simple 到底 Simple 在哪里？
 
@@ -35,13 +37,15 @@ weight: 5
 
 - 集群存储 1TiB 和 1EiB，读写延迟数量级大致不变，都在百毫秒
 - 集群存储 1TiB 和 1EiB，读写 iops 和带宽随着数据量线性增加
-- 集群存储 1TiB 到 1 EiB，扩缩容只需要提供机器资源即可，反之缩容即可
+- 集群存储 1TiB 到 1EiB，扩缩容只需要提供机器资源即可，反之缩容即可
 
-这种业务一般不会一根筋去死抠几百毫秒的延迟，但对集群的吞吐要求高，要求随着机器资源线性增长。存储研发人员应重点保证系统性能的线性扩展。
+这种业务一般不会一根筋去死抠几百毫秒的延迟，但对集群的吞吐要求高，要求随着机器资源线性增长。大型集群应当支撑百万级别的并发。存储研发人员应重点保证系统性能的线性扩展。
 
 **Simple: 操作语义简单**
 
 这个 “语义简单” 是针对 Posix 文件系统的语义来讲的。此类业务一般对 Posix 的原子性放松很多 —— 重点支持 PUT/DEL 这种操作。
+
+资源的上传和下载都可以直接通过 http + 互联网的方式进行。
 
 另外，在对象存储中，对象名称是平铺的，使用 "/" 来模拟文件夹语义，实际上就是 k-v 语义，将用户的一整个对象名看做一个 key。用户使用文件夹语义做 ls 操作是根据 key prefix 模拟出来的。
 
@@ -54,8 +58,6 @@ weight: 5
 如用户使用 s3cmd 对对 dir 进行 `du` 和 `ls`，原理是进行 key-prefix 以模拟文件夹语义。在性能和计算消耗上，这和原生支持文件树数据结构的分布式文件存储系统无法相提并论。
 
 这也是经常能看到由厂商将 S3 操作分为 A 类和 B 类，而定价不同[^cloudflare_r2_pricing]的有趣原因。
-
-[^cloudflare_r2_pricing]: [Cloudflare R2 - Pricing](https://developers.cloudflare.com/r2/pricing/#class-a-operations)
 
 **Simple: 不支持覆盖写**
 
@@ -72,20 +74,85 @@ S3 对象存储最适合存储巨量媒体数据的业务，或在 AI 训练中�
 
 另外，进一步考虑多数据中心场景下的多活写入一致性问题，对象存储往往使用简单的最终胜出一致策略，或者干脆保留多版本。不涉及类似 kv 数据库的复杂一致性保证。
 
-### 块存储
+### 文件存储 (Filesystem)
 
-### 文件存储
+分布式文件存储，也有称作 DFS、NAS 等简称。关键为用户提供了 POSIX 语义，可作为文件系统直接挂载操作。
+
+**用户形态**
+
+用户可能有万级别的容器同时挂载同一个文件存储的 Volume。可用于 AI 训练、容器内日志持久化、文件备份等。
+
+**FS: Posix 接口和文件树**
+
+分布式文件系统的语义类似于 Posix 和语义，一般提供兼容。其元数据的组织方式，在用户视角是文件-文件夹的树形结构，也就意味着文件夹的操作(比如 stat, rm, mv 等)是友好的。
+
+![](https://static.zdfmc.net/imgs/2025/12/f6a296716b772d7c19b1c213f4ce991a.png)
+
+图: CephFS 元数据组织方式[^ceph-meta]，对用户是树形结构，内部为动态子树分区策略
+
+Posix 语义的兼容性需要看具体的设计目标和文档。
+
+**FS: 一致性、并发保护和性能**
+
+一般可以得到的规律是，性能和严格的 Posix 原子性、一致性是天平的两端。这种系统为了提升并发性能，可能会放松一致性保证。反过来讲，一个提供严格的 posix 原子性和一致性的文件系统，势必会有大量的提交逻辑和补偿逻辑，牺牲性能。
+
+牺牲一致性从而提升性能的手法有：
+
+- 不支持多客户端 “并发写同一文件”，仅保证 “单写者 + 多读者” 的弱一致性
+- 追加写场景：牺牲 “实时一致性”，仅保证 “最终一致性”
+- 文件创建 / 删除场景：牺牲 “跨客户端即时一致性”，保证 “最终一致性”
+- 副本写入场景：牺牲 “强原子性”，保证 “最终副本一致性”
+
+等等。
 
 
-## 元数据和存储引擎
+
+### 块存储 (Block Storage)
+
+块存储顾名思义，直接为用户提供一个块设备挂载到本地，像读写本地块设备一样操作远程存储。
+
+和文件存储、对象存储最大的区别，是块存储服务直接提供一个线性 layout 空间，这里直接使用 CurveBS 块设备的布局映射[^curvefs_block]做演示。
+
+![](https://static.zdfmc.net/imgs/2025/12/23df3795c94b6376052cbdf57a5acb0d.png)
+
+图: CurveBS 的块设备的布局映射[^curvefs_block]
+
+则用户可以直接在上面格式化为自己的本地 FS，比如 ext4。而块设备服务不感知用户是如何管理自己 fs 元数据的，只是一个线性空间的块而已。
+
+**用户形态**
+
+块设备的用户往往直接将其作为 VM 系统盘、数据库的数据盘，因此对块设备的时延要求极高(us级别)、稳定性要求极高(P999不抖动等)。考虑数据库读写场景，用户一个同步 IO 被 hang 住，后续和正在进行的读写 IO 将直接掉底，就如同本地磁盘损坏、整个系统 hang 住一样。
+
+用户一般不会去追求单个块设备的极致容量。一般在 GiB 和 TiB 级别。
+
+**性能级别**
+
+这里引用了阿里云 ESSD 系列块设备的服务指标[^ali_bs_qos]，读者可对其数量级有大概的感性认识：
+
+![](https://static.zdfmc.net/imgs/2025/12/2060ff2e8e65b328714444933592f51c.png)
+
+
+**使用成本**
+
+值得指出的是，块存储服务为了实现 us 级别的性能，几乎是无可选择地使用 RDMA 和 NVMe 技术，相比于 ms 级别的对象存储和文件存储，这一定意味着**成本大幅提升**。有一些批评者批评云厂商的块存储过于昂贵，本文不做讨论。但使用者一定要意识到块存储特点，选择适合自己服务的存储产品。
+
+实际上，许多数仓分析、AI 训练等项目，混合使用了块存储(作为热点的高性能缓存) + 对象存储(冷数据, 量大管饱) 的混合存储模式，就是综合考虑了成本和性能，给出的工程解。例如 Alluxio[^Alluxio]，将多种存储编排为统一的接口，成为了一种分布式存储的中间件。 
+
+### 小结
+| 分布式存储形态 | 用户类型 | 核心优势 | IO 延迟 |  规模 |
+| :--- | :--- | :--- | :--- | :--- |
+| **对象存储** | 海量媒体数据、AI 训练、备份归档 | 线性扩展强（EiB 级）、成本低、高并发、互联网访问 | ms | EiB 级别 |
+| **文件存储** | 容器共享、AI 训练、传统应用迁移 | 兼容 POSIX 语义、可直接挂载、支持文件树操作 | us 或 ms | TiB 级别 |
+| **块存储** | VM 系统盘、数据库、高并发交易系统 | 微秒级时延、高 IOPS/高稳定性 | us | TiB 级别 |
+
+
+## 元数据、存储引擎和客户端
 
 元数据和存储引擎的分层设计，常见于对象存储和文件存储产品形态中。
 
 大型分布式对象/文件集群需要动辄支撑千亿、万亿级别的元数据，一个重要的流派就是元数据管理逐渐独立出来，作为并行于存储引擎的组件。甚至直接使用 NoSQL 数据库，以得到近似线性的扩容支撑能力。
 
 有综述论文[^meta_overview]描述了元数据系统的发展里程碑：
-
-[^meta_overview]: H. Dai, Y. Wang, K. B. Kent, L. Zeng and C. Xu, "[The State of the Art of Metadata Managements in Large-Scale Distributed File Systems — Scalability, Performance and Availability](https://ieeexplore.ieee.org/document/9768784)" in IEEE Transactions on Parallel and Distributed Systems, vol. 33, no. 12, pp. 3850-3869, 1 Dec. 2022, doi: 10.1109/TPDS.2022.3170574.
 
 ![](https://static.zdfmc.net/imgs/2025/11/0eae61fc3b510d9e.png)
 
@@ -95,3 +162,15 @@ S3 对象存储最适合存储巨量媒体数据的业务，或在 AI 训练中�
 {{< callout type="info" >}}
 ✋🏻😭✋🏻 本小节仍然在编辑中，请稍后回来 ✍️✍️✍️
 {{< /callout >}}
+
+[^curvefs_block]: [CurveBS Client 架构介绍](https://docs.opencurve.io/CurveBS/architecture/client-arch)
+
+[^meta_overview]: H. Dai, Y. Wang, K. B. Kent, L. Zeng and C. Xu, "[The State of the Art of Metadata Managements in Large-Scale Distributed File Systems — Scalability, Performance and Availability](https://ieeexplore.ieee.org/document/9768784)" in IEEE Transactions on Parallel and Distributed Systems, vol. 33, no. 12, pp. 3850-3869, 1 Dec. 2022, doi: 10.1109/TPDS.2022.3170574.
+
+[^cloudflare_r2_pricing]: [Cloudflare R2 - Pricing](https://developers.cloudflare.com/r2/pricing/#class-a-operations)
+
+[^ali_bs_qos]:  [阿里云 ESSD（Enterprise SSD）云盘](https://help.aliyun.com/zh/ecs/user-guide/essds)
+
+[^Alluxio]: [Alluxio/alluxio - GitHub](https://github.com/Alluxio/alluxio)
+
+[^ceph-meta]: [CephFS Dynamic Metadata Management](https://docs.ceph.com/en/reef/cephfs/dynamic-metadata-management/)
