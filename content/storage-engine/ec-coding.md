@@ -1,6 +1,6 @@
 ---
 title: "EC 编码与性能-成本-可靠性模型"
-weight: 10
+weight: 20
 ---
 
 {{< callout type="info" >}}
