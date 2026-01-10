@@ -40,29 +40,48 @@ weight: 20
 
 Erasure Code (EC) 因符合上述需求，被分布式存储广泛使用。
 
-## Head First EC 编码
+## Head First EC
 
+关于 EC 编码的简明数学原理和工程经验，可参考 OpenACID Blog 优秀的 EC 系列文章[^ec_1][^ec_2][^ec_3]。笔者强烈建议读者抽时间理解 EC 的数学原理。本文则从系统设计角度出发，考虑 EC 的使用手法，假设读者可以直接使用成熟的编码库，如 isa-l[^isa-l] 等。
 
+[^ec_1]: [Erasure-Code-擦除码-1-原理篇 - OpenACID Blog](https://blog.openacid.com/storage/ec-1/)
 
+[^ec_2]: [Erasure-Code-擦除码-2-实现篇 - OpenACID Blog](https://blog.openacid.com/storage/ec-2/)
 
-## 编码、成本与性能模型
+[^ec_3]: [Erasure-Code-擦除码-3-极限篇 -  OpenACID Blog](https://blog.openacid.com/storage/ec-3/)
 
-### 冗余度与信息论
+[^isa-l]: [https://github.com/intel/isa-l](https://github.com/intel/isa-l)
 
-### 副本
+### EC 编解码：input / output
 
-### EC 编码
+### 冗余度和信息论
 
-### LRC 编码
+### 数据组织：stripe / one-by-one
 
-## 数据安全性模型
+### 性能模型
 
-### 平均磁盘年故障率
+### 成本模型
 
-### 集群修复速度
+### 数据安全性模型
 
-### 编码与数据安全
+**集群修复速度**
 
-## 动手做：为用户制定合适的编码策略
+**MTTR**
+
+### EC 编码小结
+
+## Head First LRC
+
+### LRC 编解码器
+
+### 性能模型
+
+### 成本模型
+
+### 数据安全性模型
+
+### LRC 编码小结
+
+## 动手做：为用户选择合适的编码策略
 
 ## 小结
