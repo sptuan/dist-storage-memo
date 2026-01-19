@@ -11,7 +11,7 @@ weight: 900
 注：笔者委托画师朋友手工绘制这个地图。请大家尽情享受最后这几年人工创作的日子吧！
 
 ![](https://static.zdfmc.net/imgs/2026/dist-stroage-memo-map_v0.1.0-lite.jpg)
-*手工绘制不断更新中，您可以在[此链接](https://s3.static.zdfmc.net/dist-stroage-memo-map_v0.1.0-full.png)获取高清电子版。
+*手工绘制不断更新中，您可以在[此链接](https://github.com/sptuan/dist-storage-memo/blob/master/static/dist-stroage-memo-map_v0.1.0-full.png)获取高清电子版。
 
 
 

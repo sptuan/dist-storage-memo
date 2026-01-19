@@ -44,7 +44,7 @@
 
 ## 🗺️ 漫游地图
 ![](static/dist-stroage-memo-map_v0.1.0-lite.jpg)
-*手工绘制，后续可能更新。您可以在[此链接](static/dist-stroage-memo-map_v0.1.0-full.jpg)获取高清电子版。
+*手工绘制，后续可能更新。您可以在[此链接](https://github.com/sptuan/dist-storage-memo/blob/master/static/dist-stroage-memo-map_v0.1.0-full.png)获取高清电子版。
 
 ## 🎯 适合读者
 
