@@ -4,7 +4,7 @@
 # 分布式存储漫游指南
 
 <p align="center">
-  <em>分布式存储技术探索之旅 by SPtuan</em>
+  <em>分布式存储技术探索之旅 by SPtuan@团子云技术</em>
 </p>
 
 <div align="center">
@@ -32,9 +32,19 @@
 
 本漫游指南从现代数据中心硬件、单机 IO 性能出发，逐步探索分布式的存储产品的现状和技术点。
 
-本电子书是笔者从事分布式存储研发经历的小结。带着曾有的疑惑，从新手村重新出发，带有主观色彩。
+在笔者入门时，阅读了众多开发者的博客文章和技术讨论，受益匪浅。
 
-笔者在学习过程中，受益于诸多开发者的博客文章和技术讨论，故自己也记录下来，希望能和读者多多交流学习。
+但**始终困顿于没有一本系统的 "技能书"**，让学习者能够在起步之初，即能快速厘清整个技术栈的脉络和思想，从而放心大胆地打怪升级。故笔者逐步以开源形式编纂本书。
+
+本书内容多为笔者自己曾有的疑惑，结合一手的工程见闻和调研，尽全力保证内容的新鲜度和实用性。
+
+本书不妄图成为最权威、最深入的分布式存储教程，但求成为**最有趣、最接地气、最具备工程实践意义的一本《漫游指南》**，权作抛砖引玉，聊备各阶段读者研习之需。
+
+谨以此书献给我爱的家人们，以及屏幕前热爱分布式技术的你。
+
+## 🗺️ 漫游地图
+![](static/dist-stroage-memo-map_v0.1.0-lite.jpg)
+*手工绘制，后续可能更新。您可以在[此链接](static/dist-stroage-memo-map_v0.1.0-full.jpg)获取高清电子版。
 
 ## 🎯 适合读者
 
@@ -131,7 +141,7 @@ hugo
 
 <img src="https://github.com/sptuan.png" width="100" height="100" style="border-radius: 50%;" alt="SPtuan">
 
-**SPtuan**
+**SPtuan | 团子云技术**
 
 *一名普通的工程师，最大的愿望是度过平静的时光*
 
@@ -159,6 +169,7 @@ hugo
 
 <p>
   <strong>Email:</strong> sptuan#steinslab.io <em>(# 替换为 @)</em><br>
+  <strong>Blog Website:</strong> <a href="https://steinslab.io">steinslab.io</a><br>
   <strong>GitHub:</strong> <a href="https://github.com/sptuan/dist-storage-memo/issues">Issues & Discussions</a>
 </p>
 
@@ -184,6 +195,7 @@ hugo
 所有的读者都大大大欢迎！
 您的反馈是我前进的动力！
 WeChat: dangotech
+**Make Distributed Storage GREAT AGAIN!**
 
 ### ⭐ 如果这个项目对您有帮助，请考虑给个 Star！
 
