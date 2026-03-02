@@ -174,3 +174,12 @@
     font-weight: 500;
     line-height: 1.4;
 }
+
+/* 文中表格 figure 居中 */
+.content figure.table-center {
+    text-align: center;
+}
+.content figure.table-center table {
+    margin-left: auto;
+    margin-right: auto;
+}
