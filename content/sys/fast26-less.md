@@ -3,7 +3,16 @@ title: "FAST'26 | LESS: 纠删码存储中 I/O 高效修复"
 weight: 4
 ---
 
+LESS is More for I/O-Efficient Repairs inErasure-Coded Storage
+
 本文为 FAST'26 顶会论文，原文链接为 [LESS is More for I/O-Efficient Repairs inErasure-Coded Storage](https://www.usenix.org/conference/fast26/presentation/cheng)
+
+```
+@article{chengless,
+  title={LESS is More for I/O-Efficient Repairs in Erasure-Coded Storage},
+  author={Cheng, Keyun and Li, Guodong and Li, Xiaolu and Hu, Sihuang and Lee, Patrick PC}
+}
+```
 
 ## 团子观点
 
