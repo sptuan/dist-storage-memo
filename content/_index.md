@@ -66,26 +66,45 @@ breadcrumbs: false
 - **学生和研究者** - 对存储技术感兴趣的学习者
 - **技术人员** - 希望了解分布式存储架构
 
-## 章节目录
+## 文章索引（持续更新）
 
-{{< cards >}}
-  {{< card link="hardware" title="第一章：硬件" subtitle="2025年了，存储硬件啥样了？" >}}
-  {{< card link="sync-io" title="第二章：Sync I/O" subtitle="我应怎样在单机上读写数据？(同步篇)" >}}
-  {{< card link="async-io" title="第三章：Async I/O" subtitle="我应怎样在单机上读写数据？(异步篇)" >}}
-  {{< card link="dist-101" title="第四章：分布式系统 101" subtitle="复制和分区, 我变复杂了、但也可靠了" >}}
-{{< /cards >}}
+| 标题 | tags | 复杂度 |
+|------|------|--------|
+| [1. 硬件篇](/hardware/) | 硬件, 性能基准 | ⭐️ |
+| [2.1 同步 I/O (Sync I/O)](/sync-io/sync-io/) | Sync I/O, POSIX | ⭐️⭐️ |
+| [2.2 直接 I/O (Direct I/O)](/sync-io/direct-io/) | Direct I/O, Page Cache | ⭐️⭐️ |
+| [2.3 内存映射 I/O (mmap)](/sync-io/mmap-io/) | mmap | ⭐️⭐️ |
+| [2.4 线程池模式 (Thread Pool)](/sync-io/thread-pool/) | 线程池, 并发 IO | ⭐️⭐️⭐️ |
+| [2.5 小结](/sync-io/summary/) | Sync I/O 小结 | ⭐️ |
+| [3.2 Linux AIO](/async-io/linux-aio/) | 异步 IO, libaio | ⭐️⭐️⭐️ |
+| [3.3 Linux io_uring](/async-io/io_uring/) | io_uring, 高性能 IO | ⭐️⭐️⭐️⭐️ |
+| [3.4 Go 的磁盘 IO](/async-io/golang-disk-io/) | Go, GMP, 磁盘 IO | ⭐️⭐️ |
+| [3.5 小结](/async-io/summary/) | Async I/O 小结 | ⭐️ |
+| [4.1 混沌的分布式环境](/dist-101/chaos/) | 分布式谬误, 失效建模 | ⭐️⭐️ |
+| [4.2 时钟!! 顺序!!](/dist-101/time-and-clocks/) | 逻辑时钟, 因果顺序 | ⭐️⭐️⭐️ |
+| [4.3 CAP 定理](/dist-101/cap/) | CAP | ⭐️⭐️ |
+| [4.4 中登必备之复制与分区](/dist-101/partition-and-replicate/) | 复制, 分区 | ⭐️⭐️⭐️ |
+| [4.5 分布式存储形态与组件](/dist-101/mods/) | 对象/块/文件存储, 组件 | ⭐️⭐️⭐️ |
+| [4.6 动手做！你专属的分布式存储设计 CheckList](/dist-101/checklist/) | 技术选型, CheckList | ⭐️⭐️ |
+| [5.1 复制策略设计](/storage-engine/replicate/) | 复制组, 编码 | ⭐️⭐️⭐️ |
+| [5.2 分区策略设计](/storage-engine/partition/) | 分区 | ⭐️⭐️⭐️ |
+| [5.3 性能-成本-可靠性之不可能三角](/storage-engine/cost-perf-safety/) | 成本, 可靠性, 故障域 | ⭐️⭐️⭐️ |
+
+*复杂度：⭐️ 入门 → ⭐️⭐️⭐️⭐️⭐️ 较难。*
+
+## 论文观点和翻译
+
+| 标题 | tags | 复杂度 |
+|------|------|--------|
+| [FAST'26 \| LESS: 纠删码存储中 I/O 高效修复](/sys/fast26-less/) | FAST, EC, RS, LESS | ⭐️⭐️⭐️⭐️ |
+| [FAST'26 \| ACOS: 苹果 EB 级全球分布式对象存储](/sys/fast26-acos/) | FAST, 对象存储, 地理复制, LRC | ⭐️⭐️⭐️⭐️ |
+| [基于磁带的成本高效归档云存储 (TapeOBS)](/sys/fast26-tape-origin/) | FAST, 磁带, 归档存储 | ⭐️⭐️⭐️⭐️ |
+| [RocksDB 存算分离: Disaggregating RocksDB](/sys/rocksdb_disaggregating/) | RocksDB, 存算分离, LSM | ⭐️⭐️⭐️⭐️ |
 
 ## 即将推出
 
 更多章节正在策划撰写中，部分章节略有改动，以左侧目录为准。
 
-{{< cards >}}
-  {{< card title="第五章：控制节点篇" subtitle="数据节点的管理、路由与迁移修复" >}}
-  {{< card title="第六章：元数据篇" subtitle="元数据服务与垃圾回收 (GC)" >}}
-  {{< card title="第七章：协议篇" subtitle="S3 协议, 对象存储的事实标准" >}}
-  {{< card title="第八章：容灾篇" subtitle="容灾与跨区异步复制" >}}
-  {{< card title="番外篇：CDN" subtitle="其实我也是存储节点" >}}
-{{< /cards >}}
 
 ## 贡献与反馈
 
