@@ -101,7 +101,6 @@
 | [4.5 分布式存储形态与组件](https://storage-memo.steinslab.io/dist-101/mods/) | 对象/块/文件存储, 组件 | ⭐️⭐️⭐️ |
 | [4.6 动手做！你专属的分布式存储设计 CheckList](https://storage-memo.steinslab.io/dist-101/checklist/) | 技术选型, CheckList | ⭐️⭐️ |
 | [5.1 复制策略设计](https://storage-memo.steinslab.io/storage-engine/replicate/) | 复制组, 编码 | ⭐️⭐️⭐️ |
-| [5.2 分区策略设计](https://storage-memo.steinslab.io/storage-engine/partition/) | 分区 | ⭐️⭐️⭐️ |
 | [5.3 性能-成本-可靠性之不可能三角](https://storage-memo.steinslab.io/storage-engine/cost-perf-safety/) | 成本, 可靠性, 故障域 | ⭐️⭐️⭐️ |
 
 *复杂度：⭐️ 入门 → ⭐️⭐️⭐️⭐️⭐️ 较难。*
@@ -112,7 +111,7 @@
 |------|------|--------|
 | [FAST'26 \| LESS: 纠删码存储中 I/O 高效修复](https://storage-memo.steinslab.io/sys/fast26-less/) | FAST, EC, RS, LESS | ⭐️⭐️⭐️⭐️ |
 | [FAST'26 \| ACOS: 苹果 EB 级全球分布式对象存储](https://storage-memo.steinslab.io/sys/fast26-acos/) | FAST, 对象存储, 地理复制, LRC | ⭐️⭐️⭐️⭐️ |
-| [基于磁带的成本高效归档云存储 (TapeOBS)](https://storage-memo.steinslab.io/sys/fast26-tape-origin/) | FAST, 磁带, 归档存储 | ⭐️⭐️⭐️⭐️ |
+| [FAST'26 \| 华为云: 基于磁带的高性价比归档云存储](https://storage-memo.steinslab.io/sys/fast26-tape/) | FAST, 磁带, 归档存储 | ⭐️⭐️⭐️⭐️ |
 | [RocksDB 存算分离: Disaggregating RocksDB](https://storage-memo.steinslab.io/sys/rocksdb_disaggregating/) | RocksDB, 存算分离, LSM | ⭐️⭐️⭐️⭐️ |
 
 ## 🤝 贡献指南
