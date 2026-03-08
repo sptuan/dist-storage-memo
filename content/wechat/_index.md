@@ -1,6 +1,7 @@
 ---
 title: "读者交流群"
 weight: 2000
+description: "分布式存储漫游指南读者交流群与反馈渠道，欢迎加入讨论。"
 cascade:
   type: docs
 ---

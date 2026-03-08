@@ -1,6 +1,7 @@
 ---
 title: "4.4 中登必备之复制与分区"
 weight: 4
+description: "分布式两板斧：Partition 与 Replicate，数据安全与扩展性的基础手段，以及常见复制与分区策略。"
 cascade:
   type: docs
 ---

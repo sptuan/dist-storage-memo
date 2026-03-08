@@ -1,6 +1,7 @@
 ---
 title: "FAST'26 | ACOS: 苹果 EB 级全球分布式对象存储"
 weight: 3
+description: "FAST'26 论文解读：苹果 ACOS 双层编码（LRC + 跨区域 XOR）、EB 级规模与持久性建模、地理复制与 TCO。"
 ---
 
 ACOS: Apple’s Geo-Distributed Object Store at Exabyte Scale

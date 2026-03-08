@@ -1,6 +1,7 @@
 ---
 title: "2.5 小结"
 weight: 5
+description: "同步 I/O 章节小结：从 buffered IO、阻塞与数据安全，到 Direct I/O、mmap 与线程池模式，为异步 I/O 做铺垫。"
 ---
 
 本章和读者一起探索了 Linux 世界的`同步磁盘 IO`。

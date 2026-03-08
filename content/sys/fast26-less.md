@@ -1,6 +1,7 @@
 ---
 title: "FAST'26 | LESS: 纠删码存储中 I/O 高效修复"
 weight: 4
+description: "FAST'26 论文解读：基于 RS 码的 LESS 方案，通过分层扩展子条带降低纠删码修复 I/O，兼顾对称性与工程落地。"
 ---
 
 LESS is More for I/O-Efficient Repairs inErasure-Coded Storage

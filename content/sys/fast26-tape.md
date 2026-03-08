@@ -1,6 +1,7 @@
 ---
 title: "FAST'26 | 华为云: 基于磁带的高性价比归档云存储 - 设计与部署"
 weight: 5
+description: "FAST'26 论文解读：深度冷存储与 TapeOBS，写多读少、小时级恢复 SLA 与基于磁带的 TCO 优化。"
 ---
 
 Cost-efficient Archive Cloud Storage with Tape: Design and Deployment

@@ -1,0 +1,16 @@
+{{- $title := .Title -}}
+{{- if .IsHome }}{{ $title = .Site.Title }}{{ end -}}
+{{- $desc := "" -}}
+{{- if .Description -}}
+  {{- $desc = .Description | plainify | htmlUnescape -}}
+{{- else if .IsHome -}}
+  {{- with .Site.Params.description }}{{ $desc = . | plainify | htmlUnescape }}{{ end -}}
+{{- else -}}
+  {{- $desc = .Summary | plainify | htmlUnescape | truncate 200 "" -}}
+{{- end -}}
+{{- $img := "" -}}
+{{- with .Params.images }}{{ $img = index . 0 | absURL }}{{ else }}{{ with .Site.Params.images }}{{ $img = index . 0 | absURL }}{{ else }}{{ $img = printf "%sbanner.jpg" .Site.BaseURL }}{{ end }}{{ end -}}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ $title }}" />
+{{- with $desc }}<meta name="twitter:description" content="{{ . }}" />{{ end -}}
+{{- with $img }}<meta name="twitter:image" content="{{ . }}" />{{ end -}}

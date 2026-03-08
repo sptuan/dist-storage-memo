@@ -1,6 +1,7 @@
 ---
 title: "2.1 同步 I/O (Sync I/O)"
 weight: 1
+description: "从最简单的「只读写一次文件」需求出发，介绍 POSIX 同步 I/O 接口：read/write、pread/pwrite、lseek 等，建立 Linux 文件 I/O 基础。"
 ---
 
 一次性读完整个 Linux IO 编程接口文档，再进行编程，这也太难了！我们不妨把需求简化到极致：**仅仅读写一次文件**，先不计较任何的并发和性能，写完就可以交差！

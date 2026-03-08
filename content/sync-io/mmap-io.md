@@ -1,6 +1,7 @@
 ---
 title: "2.3 内存映射 I/O (mmap)"
 weight: 3
+description: "将文件映射为内存的 mmap 用法：概念、代码示例与 munmap 清理，像操作指针一样读写文件。"
 ---
 
 ### 1 概念

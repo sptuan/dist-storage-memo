@@ -1,6 +1,7 @@
 ---
 title: "第七章：系统设计研究"
 weight: 80
+description: "分布式存储论文与工程案例：FAST 顶会解读、RocksDB 存算分离、CubeFS 等系统设计研究。"
 cascade:
   type: docs
 ---

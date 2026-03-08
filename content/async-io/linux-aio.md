@@ -1,6 +1,7 @@
 ---
 title: "3.2 Linux AIO"
 weight: 3
+description: "Linux 内核异步 I/O 与 libaio：提交-执行-收割范式、io_setup/io_submit/io_getevents，以及 AIO 的局限与现状。"
 ---
 
 `Linux Kernel Asynchronous I/O` 于 2003 年进入内核，`libaio` 是其用户态接口的库封装。

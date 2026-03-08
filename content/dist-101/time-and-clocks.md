@@ -1,6 +1,7 @@
 ---
 title: "4.2 时钟!! 顺序!!"
 weight: 2
+description: "分布式系统中的时钟与顺序：因果顺序、逻辑时钟与物理时钟，以及为何顺序对存储与一致性至关重要。"
 cascade:
   type: docs
 math: true

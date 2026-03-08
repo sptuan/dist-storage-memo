@@ -1,6 +1,7 @@
 ---
 title: "RocksDB 存算分离: Disaggregating RocksDB"
 weight: 1
+description: "Disaggregating RocksDB 论文与存算分离实践：分布式文件系统上部署 RocksDB、远程存储与 LSM 的工程经验。"
 ---
 
 RocksDB 可靠性和高性能是众所周知的。将其部署在分布式文件系统也是一种趋势，体现了存算分离的思路。本文先讨论官方的分布式改造论文 **Disaggregating RocksDB: A Production Experience**，随后记录一些自己的想法。

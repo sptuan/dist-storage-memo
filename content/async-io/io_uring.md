@@ -1,6 +1,7 @@
 ---
 title: "3.3 Linux io_uring"
 weight: 4
+description: "io_uring 原理与使用：SQ/CQ 环形队列、liburing、零拷贝与批处理，面向高性能磁盘与网络 I/O 的现代异步接口。"
 ---
 
 随着硬件设备性能的发展，Linux 内核一个新的异步 IO 技术逐渐发展起来，io_uring。它总结了对 aio 的抱怨，发展成为一组真正异步、面向任何 IO 类型的异步接口 [^lwn_io_uring]。

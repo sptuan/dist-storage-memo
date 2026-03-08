@@ -1,6 +1,7 @@
 ---
 title: "大型基础模型(LFMs)的检查点保存: ByteCheckPoint"
 weight: 1
+description: "ByteCheckPoint：推理训练与 DFS 之间的中间层，实现与并行无关的高性能 Checkpoint 存取。"
 ---
 
 {{< callout type="info" >}}

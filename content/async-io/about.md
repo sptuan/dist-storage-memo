@@ -1,6 +1,7 @@
 ---
 title: "3.1 前置讨论"
 weight: 2
+description: "为什么磁盘 I/O 不能用 epoll？普通文件与 socket 的差异、O_NONBLOCK 与异步 I/O 必要性讨论。"
 ---
 
 

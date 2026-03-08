@@ -1,6 +1,7 @@
 ---
 title: "EC 编码和 LRC 编码"
 weight: 20
+description: "EC/LRC 纠删码的基本原理、优劣与成本性能模型，为分布式存储冗余与修复设计打基础。"
 ---
 
 {{< callout type="info" >}}

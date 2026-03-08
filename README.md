@@ -114,7 +114,7 @@
 | [FAST'26 \| 华为云: 基于磁带的高性价比归档云存储](https://storage-memo.steinslab.io/sys/fast26-tape/) | FAST, 磁带, 归档存储 | ⭐️⭐️⭐️⭐️ |
 | [RocksDB 存算分离: Disaggregating RocksDB](https://storage-memo.steinslab.io/sys/rocksdb_disaggregating/) | RocksDB, 存算分离, LSM | ⭐️⭐️⭐️⭐️ |
 
-## 🤝 贡献指南
+##  贡献指南
 
 <div align="center">
 

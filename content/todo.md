@@ -1,6 +1,7 @@
 ---
 title: "目录计划"
 weight: 999
+description: "本书章节目录与更新计划：硬件、Sync/Async I/O、分布式、控制节点、元数据、协议与容灾等。"
 ---
 
 

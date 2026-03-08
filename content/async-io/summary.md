@@ -1,6 +1,7 @@
 ---
 title: "3.5 小结"
 weight: 99
+description: "异步 I/O 章节小结：从 epoll 局限、Linux AIO 到 io_uring 与 Go/tokio 的磁盘 I/O 处理，为进入分布式存储做准备。"
 ---
 
 本文和读者一起，进入 Linux 异步 IO 的世界。

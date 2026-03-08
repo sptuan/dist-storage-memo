@@ -1,6 +1,7 @@
 ---
 title: "4.3 CAP 定理"
 weight: 3
+description: "CAP 定理简介：一致性、可用性与分区容错之间的取舍，可结合 DDIA 等资料深入理解。"
 cascade:
   type: docs
 ---

@@ -1,6 +1,7 @@
 ---
 title: "第二章：同步 I/O (Sync I/O)"
 weight: 2
+description: "单机同步 I/O 入门：Buffered/Direct、Sync/Async 分类，从 POSIX 接口到线程池模式，为分布式存储打牢 IO 基础。"
 ---
 
 在扩展到分布式之前，我们先来弄明白单机 IO 的手段。同步/异步/Poller/线程池，眼花缭乱的名词，是否在故弄玄虚？

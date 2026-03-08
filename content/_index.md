@@ -1,5 +1,5 @@
 ---
-title: ""
+description: "系统探索分布式存储的技术脉络与工程实践，面向开发者与学习者的开源漫游指南。"
 cascade:
   type: docs
 toc: false

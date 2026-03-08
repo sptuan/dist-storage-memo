@@ -1,6 +1,7 @@
 ---
 title: "第三章：异步 I/O (Async I/O)"
 weight: 3
+description: "Linux 异步 I/O 总览：io_uring、epoll、libaio、POSIX AIO 对比，聚焦 libaio 与 io_uring 的实践与性能。"
 ---
 
 上篇文章中我们探索了同步 IO 的来龙去脉。本篇文章将踏入异步 IO 王国，研究异步编程思想。

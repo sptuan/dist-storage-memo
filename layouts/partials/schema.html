@@ -1,0 +1,23 @@
+{{- $desc := "" -}}
+{{- if .Description -}}
+  {{- $desc = .Description | plainify | htmlUnescape -}}
+{{- else if .IsHome -}}
+  {{- with .Site.Params.description }}{{ $desc = . | plainify | htmlUnescape }}{{ end -}}
+{{- else -}}
+  {{- $desc = .Summary | plainify | htmlUnescape | truncate 160 "" -}}
+{{- end -}}
+
+{{- if .IsHome -}}
+  {{- $j := printf `{"@context":"https://schema.org","@type":"WebSite","name":%s,"description":%s,"url":%s,"inLanguage":%s}` (.Site.Title | jsonify) ($desc | jsonify) (.Permalink | jsonify) (.Site.Language.Lang | jsonify) -}}
+  {{- (printf `<script type="application/ld+json">%s</script>` $j) | safeHTML -}}
+{{- else if .IsPage -}}
+  {{- $pub := or .PublishDate .Date -}}
+  {{- $mod := or .Lastmod .Date -}}
+  {{- $dp := "" }}{{ $dm := "" -}}
+  {{- if and $pub (not $pub.IsZero) }}{{ $dp = $pub.Format "2006-01-02T15:04:05Z07:00" | jsonify }}{{ end -}}
+  {{- if and $mod (not $mod.IsZero) }}{{ $dm = $mod.Format "2006-01-02T15:04:05Z07:00" | jsonify }}{{ end -}}
+  {{- $datePart := "" -}}
+  {{- if or $dp $dm }}{{ $datePart = printf `,"datePublished":%s,"dateModified":%s` ($dp | default $dm) ($dm | default $dp) }}{{ end -}}
+  {{- $j := printf `{"@context":"https://schema.org","@type":"TechArticle","headline":%s,"description":%s,"url":%s%s,"author":{"@type":"Person","name":%s},"publisher":{"@type":"Organization","name":%s}}` (.Title | jsonify) ($desc | jsonify) (.Permalink | jsonify) $datePart (.Site.Params.author | default "SPtuan" | jsonify) (.Site.Title | jsonify) -}}
+  {{- (printf `<script type="application/ld+json">%s</script>` $j) | safeHTML -}}
+{{- end -}}

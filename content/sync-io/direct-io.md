@@ -1,6 +1,7 @@
 ---
 title: "2.2 直接 I/O (Direct I/O)"
 weight: 2
+description: "介绍 Page Cache 与 O_DIRECT：绕过内核缓存的直接 I/O 用法、对齐与注意事项，以及适用场景。"
 ---
 
 ### 1 kernel page cache
