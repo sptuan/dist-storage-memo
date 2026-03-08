@@ -16,7 +16,7 @@
 </div>
 
 <p align="center">
-  <a href="https://storage-memo.steinslab.io/">
+  <a href="https://memo.steinslab.io/">
     <img src="https://img.shields.io/badge/📖_在线阅读-4A90E2?style=for-the-badge&logoColor=white" alt="在线阅读">
   </a>
   <a href="https://github.com/sptuan/dist-storage-memo">
@@ -74,7 +74,7 @@
 
 <div align="center">
 
-**[👉 立即开始阅读 👈](https://storage-memo.steinslab.io/)**
+**[👉 立即开始阅读 👈](https://memo.steinslab.io/)**
 
 </div>
 
@@ -84,24 +84,24 @@
 
 | 标题 | tags | 复杂度 |
 |------|------|--------|
-| [1. 硬件篇](https://storage-memo.steinslab.io/hardware/) | 硬件, 性能基准 | ⭐️ |
-| [2.1 同步 I/O (Sync I/O)](https://storage-memo.steinslab.io/sync-io/sync-io/) | Sync I/O, POSIX | ⭐️⭐️ |
-| [2.2 直接 I/O (Direct I/O)](https://storage-memo.steinslab.io/sync-io/direct-io/) | Direct I/O, Page Cache | ⭐️⭐️ |
-| [2.3 内存映射 I/O (mmap)](https://storage-memo.steinslab.io/sync-io/mmap-io/) | mmap | ⭐️⭐️ |
-| [2.4 线程池模式 (Thread Pool)](https://storage-memo.steinslab.io/sync-io/thread-pool/) | 线程池, 并发 IO | ⭐️⭐️⭐️ |
-| [2.5 小结](https://storage-memo.steinslab.io/sync-io/summary/) | Sync I/O 小结 | ⭐️ |
-| [3.2 Linux AIO](https://storage-memo.steinslab.io/async-io/linux-aio/) | 异步 IO, libaio | ⭐️⭐️⭐️ |
-| [3.3 Linux io_uring](https://storage-memo.steinslab.io/async-io/io_uring/) | io_uring, 高性能 IO | ⭐️⭐️⭐️⭐️ |
-| [3.4 Go 的磁盘 IO](https://storage-memo.steinslab.io/async-io/golang-disk-io/) | Go, GMP, 磁盘 IO | ⭐️⭐️ |
-| [3.5 小结](https://storage-memo.steinslab.io/async-io/summary/) | Async I/O 小结 | ⭐️ |
-| [4.1 混沌的分布式环境](https://storage-memo.steinslab.io/dist-101/chaos/) | 分布式谬误, 失效建模 | ⭐️⭐️ |
-| [4.2 时钟!! 顺序!!](https://storage-memo.steinslab.io/dist-101/time-and-clocks/) | 逻辑时钟, 因果顺序 | ⭐️⭐️⭐️ |
-| [4.3 CAP 定理](https://storage-memo.steinslab.io/dist-101/cap/) | CAP | ⭐️⭐️ |
-| [4.4 中登必备之复制与分区](https://storage-memo.steinslab.io/dist-101/partition-and-replicate/) | 复制, 分区 | ⭐️⭐️⭐️ |
-| [4.5 分布式存储形态与组件](https://storage-memo.steinslab.io/dist-101/mods/) | 对象/块/文件存储, 组件 | ⭐️⭐️⭐️ |
-| [4.6 动手做！你专属的分布式存储设计 CheckList](https://storage-memo.steinslab.io/dist-101/checklist/) | 技术选型, CheckList | ⭐️⭐️ |
-| [5.1 复制策略设计](https://storage-memo.steinslab.io/storage-engine/replicate/) | 复制组, 编码 | ⭐️⭐️⭐️ |
-| [5.3 性能-成本-可靠性之不可能三角](https://storage-memo.steinslab.io/storage-engine/cost-perf-safety/) | 成本, 可靠性, 故障域 | ⭐️⭐️⭐️ |
+| [1. 硬件篇](https://memo.steinslab.io/hardware/) | 硬件, 性能基准 | ⭐️ |
+| [2.1 同步 I/O (Sync I/O)](https://memo.steinslab.io/sync-io/sync-io/) | Sync I/O, POSIX | ⭐️⭐️ |
+| [2.2 直接 I/O (Direct I/O)](https://memo.steinslab.io/sync-io/direct-io/) | Direct I/O, Page Cache | ⭐️⭐️ |
+| [2.3 内存映射 I/O (mmap)](https://memo.steinslab.io/sync-io/mmap-io/) | mmap | ⭐️⭐️ |
+| [2.4 线程池模式 (Thread Pool)](https://memo.steinslab.io/sync-io/thread-pool/) | 线程池, 并发 IO | ⭐️⭐️⭐️ |
+| [2.5 小结](https://memo.steinslab.io/sync-io/summary/) | Sync I/O 小结 | ⭐️ |
+| [3.2 Linux AIO](https://memo.steinslab.io/async-io/linux-aio/) | 异步 IO, libaio | ⭐️⭐️⭐️ |
+| [3.3 Linux io_uring](https://memo.steinslab.io/async-io/io_uring/) | io_uring, 高性能 IO | ⭐️⭐️⭐️⭐️ |
+| [3.4 Go 的磁盘 IO](https://memo.steinslab.io/async-io/golang-disk-io/) | Go, GMP, 磁盘 IO | ⭐️⭐️ |
+| [3.5 小结](https://memo.steinslab.io/async-io/summary/) | Async I/O 小结 | ⭐️ |
+| [4.1 混沌的分布式环境](https://memo.steinslab.io/dist-101/chaos/) | 分布式谬误, 失效建模 | ⭐️⭐️ |
+| [4.2 时钟!! 顺序!!](https://memo.steinslab.io/dist-101/time-and-clocks/) | 逻辑时钟, 因果顺序 | ⭐️⭐️⭐️ |
+| [4.3 CAP 定理](https://memo.steinslab.io/dist-101/cap/) | CAP | ⭐️⭐️ |
+| [4.4 中登必备之复制与分区](https://memo.steinslab.io/dist-101/partition-and-replicate/) | 复制, 分区 | ⭐️⭐️⭐️ |
+| [4.5 分布式存储形态与组件](https://memo.steinslab.io/dist-101/mods/) | 对象/块/文件存储, 组件 | ⭐️⭐️⭐️ |
+| [4.6 动手做！你专属的分布式存储设计 CheckList](https://memo.steinslab.io/dist-101/checklist/) | 技术选型, CheckList | ⭐️⭐️ |
+| [5.1 复制策略设计](https://memo.steinslab.io/storage-engine/replicate/) | 复制组, 编码 | ⭐️⭐️⭐️ |
+| [5.3 性能-成本-可靠性之不可能三角](https://memo.steinslab.io/storage-engine/cost-perf-safety/) | 成本, 可靠性, 故障域 | ⭐️⭐️⭐️ |
 
 *复杂度：⭐️ 入门 → ⭐️⭐️⭐️⭐️⭐️ 较难。*
 
@@ -109,10 +109,10 @@
 
 | 标题 | tags | 复杂度 |
 |------|------|--------|
-| [FAST'26 \| LESS: 纠删码存储中 I/O 高效修复](https://storage-memo.steinslab.io/sys/fast26-less/) | FAST, EC, RS, LESS | ⭐️⭐️⭐️⭐️ |
-| [FAST'26 \| ACOS: 苹果 EB 级全球分布式对象存储](https://storage-memo.steinslab.io/sys/fast26-acos/) | FAST, 对象存储, 地理复制, LRC | ⭐️⭐️⭐️⭐️ |
-| [FAST'26 \| 华为云: 基于磁带的高性价比归档云存储](https://storage-memo.steinslab.io/sys/fast26-tape/) | FAST, 磁带, 归档存储 | ⭐️⭐️⭐️⭐️ |
-| [RocksDB 存算分离: Disaggregating RocksDB](https://storage-memo.steinslab.io/sys/rocksdb_disaggregating/) | RocksDB, 存算分离, LSM | ⭐️⭐️⭐️⭐️ |
+| [FAST'26 \| LESS: 纠删码存储中 I/O 高效修复](https://memo.steinslab.io/sys/fast26-less/) | FAST, EC, RS, LESS | ⭐️⭐️⭐️⭐️ |
+| [FAST'26 \| ACOS: 苹果 EB 级全球分布式对象存储](https://memo.steinslab.io/sys/fast26-acos/) | FAST, 对象存储, 地理复制, LRC | ⭐️⭐️⭐️⭐️ |
+| [FAST'26 \| 华为云: 基于磁带的高性价比归档云存储](https://memo.steinslab.io/sys/fast26-tape/) | FAST, 磁带, 归档存储 | ⭐️⭐️⭐️⭐️ |
+| [RocksDB 存算分离: Disaggregating RocksDB](https://memo.steinslab.io/sys/rocksdb_disaggregating/) | RocksDB, 存算分离, LSM | ⭐️⭐️⭐️⭐️ |
 
 ##  贡献指南
 

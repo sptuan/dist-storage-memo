@@ -58,7 +58,7 @@ Cost-efficient Archive Cloud Storage with Tape: Design and Deployment
 
 现代磁带（如 LTO 系列）是 **append-only** 的，无法就地更新。原因和 SMR（叠瓦式磁记录）硬盘类似：为了提升存储密度，数据磁道采用叠瓦式重叠排列。就地覆写会破坏相邻磁道的数据。SMR HDD 在消费级市场因这一特性引发了不少争议，但在归档存储场景下，append-only 反而是天然适配的。
 
-append-only 存储在分布式系统中其实是一种被广泛接受的模式。笔者在 [RocksDB 存算分离](https://storage-memo.steinslab.io/sys/rocksdb_disaggregating/) 中也提到，追加写文件系统是很受欢迎的——BigTable、HBase、Spanner 都构建在追加写文件系统之上。追加写牺牲了随机写语义，换取了分布式系统设计和容灾机制的简化。
+append-only 存储在分布式系统中其实是一种被广泛接受的模式。笔者在 [RocksDB 存算分离](https://memo.steinslab.io/sys/rocksdb_disaggregating/) 中也提到，追加写文件系统是很受欢迎的——BigTable、HBase、Spanner 都构建在追加写文件系统之上。追加写牺牲了随机写语义，换取了分布式系统设计和容灾机制的简化。
 
 TapeOBS 天然利用了这种 append-only 特性。PLog（持久化日志）作为基本存储单元也是 append-only 的：创建、追加、封存，之后变为不可变。日志结构化写入使得驱动器可以持续向同一盘磁带顺序追加，最大限度减少了驱动器切换和寻道。磁带的分区机制则提供了有限的独立追加点，放宽了纯顺序写的约束。
 

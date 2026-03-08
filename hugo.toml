@@ -1,4 +1,4 @@
-baseURL = 'https://storage-memo.steinslab.io'
+baseURL = 'https://memo.steinslab.io'
 languageCode = 'zh-cn'
 title = '分布式存储漫游指南'
 theme = 'hextra'
@@ -99,4 +99,4 @@ theme = 'hextra'
 
   # SEO: 站点描述与默认 OG 图（banner.jpg）
   description = "系统探索分布式存储的技术脉络与工程实践，面向开发者与学习者的分布式存储漫游指南。"
-  images = ["https://storage-memo.steinslab.io/banner.jpg"]
+  images = ["https://memo.steinslab.io/banner.jpg"]
