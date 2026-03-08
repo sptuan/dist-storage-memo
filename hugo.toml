@@ -38,11 +38,11 @@ theme = 'hextra'
 
 [menu]
   [[menu.main]]
-    name = "关于"
-    pageRef = "/about"
+    name = "首页"
+    pageRef = "/"
     weight = 20
   [[menu.main]]
-    name = "作者 Blog"
+    name = "团子云技术"
     url = "https://steinslab.io/"
     weight = 25
   [[menu.main]]
