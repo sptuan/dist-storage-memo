@@ -95,10 +95,12 @@ breadcrumbs: false
 
 | 标题 | tags | 复杂度 |
 |------|------|--------|
-| [FAST'26 \| LESS: 纠删码存储中 I/O 高效修复](/sys/fast26-less/) | FAST, EC, RS, LESS | ⭐️⭐️⭐️⭐️ |
-| [FAST'26 \| ACOS: 苹果 EB 级全球分布式对象存储](/sys/fast26-acos/) | FAST, 对象存储, 地理复制, LRC | ⭐️⭐️⭐️⭐️ |
-| [FAST'26 \| 华为云: 基于磁带的高性价比归档云存储](/sys/fast26-tape/) | FAST, 磁带, 归档存储 | ⭐️⭐️⭐️⭐️ |
-| [RocksDB 存算分离: Disaggregating RocksDB](/sys/rocksdb_disaggregating/) | RocksDB, 存算分离, LSM | ⭐️⭐️⭐️⭐️ |
+| [RocksDB 存算分离: Disaggregating RocksDB](https://memo.steinslab.io/sys/rocksdb_disaggregating/) | RocksDB, 存算分离, LSM | ⭐️⭐️⭐️⭐️ |
+| [FAST'26 \| LESS: 纠删码存储中 I/O 高效修复](https://memo.steinslab.io/sys/fast26-less/) | FAST, EC, RS, LESS | ⭐️⭐️⭐️⭐️ |
+| [FAST'26 \| ACOS: 苹果 EB 级全球分布式对象存储](https://memo.steinslab.io/sys/fast26-acos/) | FAST, 对象存储, 地理复制, LRC | ⭐️⭐️⭐️ |
+| [FAST'26 \| 华为云: 基于磁带的高性价比归档云存储](https://memo.steinslab.io/sys/fast26-tape/) | FAST, 磁带, 归档存储 | ⭐️⭐️⭐️⭐️ |
+| [FAST'26 \| 从 SPECFS 看新时代 infra 开发者工作范式](https://memo.steinslab.io/sys/fast26-spec/) | SYSSPEC, LLM Coding, Vibe Coding | ⭐️⭐️ |
+
 
 ## 即将推出
 
