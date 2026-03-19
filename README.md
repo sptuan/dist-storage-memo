@@ -116,6 +116,12 @@
 | [FAST'26 \| 从 SPECFS 看新时代 infra 开发者工作范式](https://memo.steinslab.io/sys/fast26-spec/) | SYSSPEC, LLM Coding, Vibe Coding | ⭐️⭐️ |
 
 
+## 🤖 AI 场景分布式存储系统研究
+
+| 标题 | tags | 复杂度 |
+|------|------|--------|
+| [FAST'26 论文导读 \| AITURBO: 在存算分离架构中给 AI 任务垫一层分布式读写缓存](https://memo.steinslab.io/ai-sys/fast26-aiturbo/) | FAST, AITURBO, 存算分离, AI I/O | ⭐️⭐️⭐️ |
+
 ##  贡献指南
 
 <div align="center">
