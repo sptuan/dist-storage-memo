@@ -122,6 +122,12 @@
 |------|------|--------|
 | [FAST'26 论文导读 \| AITURBO: 在存算分离架构中给 AI 任务垫一层分布式读写缓存](https://memo.steinslab.io/ai-sys/fast26-aiturbo/) | FAST, AITURBO, 存算分离, AI I/O | ⭐️⭐️⭐️ |
 
+## 🔍 专题：存储领域观察和思考
+
+| 标题 | tags | 复杂度 |
+|------|------|--------|
+| [FAST 2002–2026：AI 时代来了，存储系统的问题变了吗？](https://memo.steinslab.io/review/fast-trends-2002-2026/) | FAST, 存储演进, 趋势总结 | ⭐️⭐️⭐️⭐️ |
+
 ##  贡献指南
 
 <div align="center">
