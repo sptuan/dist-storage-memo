@@ -1,6 +1,6 @@
 ---
 title: "专题：存储领域观察和思考"
-weight: 9
+weight: 100
 description: "存储领域观察和思考"
 cascade:
   type: docs
