@@ -116,6 +116,12 @@
 | [FAST'26 \| 从 SPECFS 看新时代 infra 开发者工作范式](https://memo.steinslab.io/sys/fast26-spec/) | SYSSPEC, LLM Coding, Vibe Coding | ⭐️⭐️ |
 
 
+## 🧠 AI 推理与训练系统
+
+| 标题 | tags | 复杂度 |
+|------|------|--------|
+| [8.1 理解 KV Cache：Attention、P/D 分离与 vLLM 的页式显存管理](https://memo.steinslab.io/ai/kvcache/) | LLM, KV Cache, Attention, PagedAttention, vLLM | ⭐️⭐️⭐️ |
+
 ## 🤖 AI 场景分布式存储系统研究
 
 | 标题 | tags | 复杂度 |

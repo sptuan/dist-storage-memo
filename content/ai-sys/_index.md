@@ -1,7 +1,7 @@
 ---
-title: "第八章：AI 推理训练应用研究"
+title: "第九章：AI 场景分布式存储系统研究"
 weight: 90
-description: "分布式存储与大模型推理训练：Checkpoint、ByteCheckPoint 等 AI 存储应用研究。"
+description: "AI 推理训练场景的分布式存储系统论文与工程案例：AITURBO、ByteCheckpoint 等系统研究。"
 cascade:
   type: docs
 ---

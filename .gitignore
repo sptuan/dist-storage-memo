@@ -18,6 +18,7 @@ Thumbs.db
 # Editor files
 .vscode/
 .idea/
+.cursor/
 *.swp
 *.swo
 *~

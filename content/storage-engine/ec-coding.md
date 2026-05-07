@@ -43,7 +43,7 @@ Erasure Code (EC) 因符合上述需求，被分布式存储广泛使用。
 
 ## Head First EC
 
-关于 EC 编码的简明数学原理和工程经验，可参考 OpenACID Blog 优秀的 EC 系列文章[^ec_1][^ec_2][^ec_3]。笔者强烈建议读者抽时间理解 EC 的数学原理。本文则从系统设计角度出发，考虑 EC 的使用手法，假设读者可以直接使用成熟的编码库，如 isa-l[^isa-l] 等。
+关于 EC 编码的简明数学原理和工程经验。另可参考 OpenACID Blog 优秀的 EC 系列文章[^ec_1][^ec_2][^ec_3]。工程上一般直接使用成熟的编码库，如 isa-l[^isa-l] 等。
 
 [^ec_1]: [Erasure-Code-擦除码-1-原理篇 - OpenACID Blog](https://blog.openacid.com/storage/ec-1/)
 
@@ -52,6 +52,18 @@ Erasure Code (EC) 因符合上述需求，被分布式存储广泛使用。
 [^ec_3]: [Erasure-Code-擦除码-3-极限篇 -  OpenACID Blog](https://blog.openacid.com/storage/ec-3/)
 
 [^isa-l]: [https://github.com/intel/isa-l](https://github.com/intel/isa-l)
+
+### 多项式基础魔法
+
+让我们一起回忆一下代数基础：两点确定一条直线，三点确定一条抛物线，以此类推。
+
+使用更严谨的方式表达为：**$k$ 个独立的点，可以唯一确定一个最高次为 $k-1$ 次的多项式。**
+
+这个原理看似简单，却像一个基础但重要的基本功魔法，支撑了我们上层的编码可行性。
+
+假设我们有 4 个数据字节，要创建 2 个额外的校验字节。我们只需要选择合适的参数，解下面的曲线方程即可。
+
+$$f(x) = d_0 + d_1x + d_2x^2 + \dots + d_{k-1}x^{k-1}$$
 
 ### EC 编解码：input / output
 
