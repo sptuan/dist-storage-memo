@@ -1,5 +1,5 @@
 ---
-title: "第八章：AI 推理与训练系统"
+title: "第八章：AI 推理与训练专题"
 weight: 85
 description: "面向存储工程师的 AI 推理与训练系统入门：从 Attention、KV Cache、PagedAttention 到 P/D 分离与 Checkpoint，建立理解 AI 场景存储问题的先验知识。"
 cascade:

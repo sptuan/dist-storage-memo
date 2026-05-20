@@ -88,7 +88,8 @@ breadcrumbs: false
 | [4.6 动手做！你专属的分布式存储设计 CheckList](/dist-101/checklist/) | 技术选型, CheckList | ⭐️⭐️ |
 | [5.1 复制策略设计](/storage-engine/replicate/) | 复制组, 编码 | ⭐️⭐️⭐️⭐️ |
 | [5.2 分区策略设计](/storage-engine/partition/) | 分区, 路由, 负载均衡 | ⭐️⭐️⭐️⭐️ |
-| [5.3 性能-成本-可靠性之不可能三角](/storage-engine/cost-perf-safety/) | 成本, 可靠性, 故障域 | ⭐️⭐️⭐️⭐️ |
+| [5.3 性能-成本-可靠性之不可能三角](/storage-engine/cost-perf-safety/) | 成本, 可靠性, 故障域 | ⭐️⭐️⭐️ |
+| [5.4 EC 编码和 LRC 编码](/storage-engine/ec-coding/) | EC, LRC, 纠删码 | ⭐️⭐️⭐️⭐️ |
 
 *复杂度：⭐️ 入门 → ⭐️⭐️⭐️⭐️⭐️ 较难。*
 
