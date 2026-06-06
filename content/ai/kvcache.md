@@ -1,5 +1,5 @@
 ---
-title: "8.1 理解 KV Cache：Attention、P/D 分离与 vLLM 的页式显存管理"
+title: "9.1 理解 KV Cache：Attention、P/D 分离与 vLLM 的页式显存管理"
 weight: 11
 date: 2026-05-05
 tags: ["LLM", "KV Cache", "Attention", "PagedAttention", "vLLM", "GPU"]

@@ -1,6 +1,6 @@
 ---
-title: "第六章：元数据系统设计"
-weight: 6
+title: "第七章：元数据系统设计"
+weight: 7
 description: "元数据系统设计章节：规划与编辑中，涵盖 NoSQL 引擎与元数据服务等。"
 cascade:
   type: docs

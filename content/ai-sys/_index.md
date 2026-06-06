@@ -1,5 +1,5 @@
 ---
-title: "第九章：AI 场景分布式存储系统研究"
+title: "第十章：AI 场景分布式存储系统研究"
 weight: 90
 description: "AI 推理训练场景的分布式存储系统论文与工程案例：AITURBO、ByteCheckpoint 等系统研究。"
 cascade:

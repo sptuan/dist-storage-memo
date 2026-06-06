@@ -107,6 +107,7 @@
 | [5.3 性能-成本-可靠性之不可能三角](https://memo.steinslab.io/storage-engine/cost-perf-safety/) | 成本, 可靠性, 故障域 | ⭐️⭐️⭐️ |
 | [5.4 EC 编码和 LRC 编码](https://memo.steinslab.io/storage-engine/ec-coding/) | EC, LRC, 纠删码 | ⭐️⭐️⭐️⭐️ |
 | [5.5 存储老司机的 EC/LRC 选型-核算-评估指南](https://memo.steinslab.io/storage-engine/ec-calc/) | EC, LRC, 选型, 核算 | ⭐️⭐️⭐️⭐️ |
+| [6.1 Raft 共识算法](https://memo.steinslab.io/raft/raft/) | Raft, 共识, Leader 选举 | ⭐️⭐️⭐️⭐️ |
 
 *复杂度：⭐️ 入门 → ⭐️⭐️⭐️⭐️⭐️ 较难。*
 
@@ -125,7 +126,7 @@
 
 | 标题 | tags | 复杂度 |
 |------|------|--------|
-| [8.1 理解 KV Cache：Attention、P/D 分离与 vLLM 的页式显存管理](https://memo.steinslab.io/ai/kvcache/) | LLM, KV Cache, Attention, PagedAttention, vLLM | ⭐️⭐️⭐️ |
+| [9.1 理解 KV Cache：Attention、P/D 分离与 vLLM 的页式显存管理](https://memo.steinslab.io/ai/kvcache/) | LLM, KV Cache, Attention, PagedAttention, vLLM | ⭐️⭐️⭐️ |
 
 ## 🤖 AI 场景分布式存储系统研究
 
