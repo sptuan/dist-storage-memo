@@ -107,7 +107,7 @@
 | [5.3 性能-成本-可靠性之不可能三角](https://memo.steinslab.io/storage-engine/cost-perf-safety/) | 成本, 可靠性, 故障域 | ⭐️⭐️⭐️ |
 | [5.4 EC 编码和 LRC 编码](https://memo.steinslab.io/storage-engine/ec-coding/) | EC, LRC, 纠删码 | ⭐️⭐️⭐️⭐️ |
 | [5.5 存储老司机的 EC/LRC 选型-核算-评估指南](https://memo.steinslab.io/storage-engine/ec-calc/) | EC, LRC, 选型, 核算 | ⭐️⭐️⭐️⭐️ |
-| [6.1 Raft 共识算法](https://memo.steinslab.io/raft/raft/) | Raft, 共识, Leader 选举 | ⭐️⭐️⭐️⭐️ |
+| [6.1 Raft 共识 101](https://memo.steinslab.io/raft/raft_101/) | Raft, 共识, Leader 选举, 日志复制 | 编辑中 |
 
 *复杂度：⭐️ 入门 → ⭐️⭐️⭐️⭐️⭐️ 较难。*
 
